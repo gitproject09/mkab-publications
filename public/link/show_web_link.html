@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    	<title>Majlish Khuddamul Ahmadiyya, Bangladesh</title>
+
+    	<!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- google font -->
+        <link href='http://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+		
+		<style>
+			h4 {
+			  text-align: center;
+			  color: blue;
+			}
+		</style>
+    </head>
+	
+	<body>
+		<h4>Ahban by Ishayat Department, MKA Bangladesh</h4>
+			
+		<iframe id="myIframe" frameBorder="0" scrolling="auto" height="700px" width="100%"></iframe>
+				
+	</body>
+	
+	<script>
+		let myIframe = document.getElementById("myIframe");
+		
+		var url = new URL(window.location.href);
+		var monthName = url.searchParams.get("monthName");
+		let final_string_url = "https://online.fliphtml5.com/dyfdz/" + monthName + "#toolbar=0&scrollbar=0";
+		//let final_string_url = "https://online.fliphtml5.com/dyfdz/shjg/#toolbar=0&scrollbar=0";
+		//alert(final_string_url);
+		myIframe.src = final_string_url;
+	</script>
+   
+</html>

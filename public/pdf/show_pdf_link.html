@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    	<title>Majlish Khuddamul Ahmadiyya, Bangladesh</title>
+
+    	<!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- google font -->
+        <link href='http://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+		
+		<style>
+			h2 {
+			  text-align: center;
+			}
+
+			h4 {
+			  text-align: center;
+			  color: blue;
+			}
+		</style>
+    </head>
+	
+	<body>
+		<h2>Ishayat, MKA Bangladesh</h2>
+		<h4>If the book is not fully loaded then Pull Down to Refresh</h4>
+			
+		<iframe id="myIframe" frameBorder="0" scrolling="auto" height="800px" width="100%"></iframe>
+				
+	</body>
+	
+	<script>
+		let myIframe = document.getElementById("myIframe");
+		
+		var url = new URL(window.location.href);
+		var bookName = url.searchParams.get("bookname");
+		let final_string_url = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://fir-rtdb-1654a.web.app/books/" + bookName + ".pdf#toolbar=0&scrollbar=0";
+		//alert(final_string_url);
+		//https://mrvirk.com/passing-url-parameters-to-iframe-using-javascript.html
+		myIframe.src = final_string_url;
+	</script>
+   
+</html>

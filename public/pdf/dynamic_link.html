@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+	<body>
+		<h1>MKAB Books</h1>
+		<h2>MKA Bangladesh</h2>
+			
+		<iframe id="myIframe" frameBorder="0" scrolling="auto" height="1000px" width="100%"></iframe>
+
+		<script>
+			let myIframe = document.getElementById("myIframe");
+			var url = new URL(window.location.href);
+			var bookname = url.searchParams.get("bookname");
+			let final_string_url = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://fir-rtdb-1654a.web.app/books/" + bookname + ".pdf#toolbar=0&scrollbar=0";
+			myIframe.src = final_string_url;
+		</script>
+	</body>
+</html>
